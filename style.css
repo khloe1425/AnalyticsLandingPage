@@ -8,6 +8,9 @@ body {
   scroll-behavior: smooth;
   background: var(--background);
 }
+body {
+  overflow-x: hidden;
+}
 :root {
   --primary-color: #172755;
   --secondary-color: #8794ba;
@@ -108,6 +111,7 @@ button {
   height: 102vh;
   background-color: var(--pink);
   clip-path: polygon(0 0, 100% 0%, 100% 78%, 0 100%);
+  overflow: hidden;
 }
 .carousel {
   overflow: hidden;
@@ -119,13 +123,19 @@ button {
 }
 .carousel .row {
   align-items: center;
-  margin-top: 7rem;
+  margin-top: 13rem;
 }
-.carousel-right {
-  position: relative;
+.img-wrapper {
+  position: absolute;
+  top: 115px;
+  right: -230px;
 }
 .carousel-left {
   padding: 0;
+  position: relative;
+}
+.img-home {
+  display: none;
 }
 .img-home-2 {
   position: absolute;
@@ -145,7 +155,7 @@ button {
 }
 .carousel-left .title {
   font-size: 3.5rem;
-  width: 85%;
+  width: 83%;
   margin-bottom: 1rem;
   color: white;
   font-weight: 600;
@@ -356,23 +366,26 @@ footer {
     width: 100%;
     padding: 1rem;
   }
+  .carousel .container .row {
+    margin-top: 5rem;
+  }
   .container {
     padding: 0rem;
   }
   .carousel .container .row {
     flex-direction: column-reverse;
   }
-  .carousel-right {
-    padding: 0;
-  }
   .carousel-left {
     padding: 1rem;
   }
-  .carousel-right .img-home-1 {
+  .img-home {
     max-inline-size: 100%;
     display: block;
   }
-  .carousel-right .img-home-2 {
+  .img-home-1 {
+    display: none;
+  }
+  .img-home-2 {
     display: none;
   }
   .carousel-left .title {
