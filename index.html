@@ -15,13 +15,15 @@
     <!-- Font -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
         rel="stylesheet">
+    <!-- Animate -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
 </head>
 
 <body>
     <header>
         <div class="container">
             <div class="large-screen">
-                <nav class="d-flex">
+                <nav class="d-flex wow animate__animated animate__fadeInUp animate__delay-1s animate__slow">
                     <div class="brand">
                         <a href="index.html">
                             <img src="./assets/logo.svg" alt="">
@@ -63,7 +65,7 @@
                     </div>
 
                     <div class="menuBar-link text-center" id="menubar-link">
-                        <ul class="d-flex">
+                        <ul>
                             <li>
                                 <a href="#">Products</a>
                             </li>
@@ -83,40 +85,44 @@
             </nav>
         </div>
     </header>
-    <section class="carousel">
-        <div class="background">
-            <img src="./assets/background.svg" alt="" class="background-1">
-            <img src="./assets/background2.svg" alt="" class="background-2">
-        </div>
-        <div class="container">
-            <div class="row">
-                <div class="col-sm-12 col-md-12 col-lg-7 carousel-left">
-                    <h1 class="title">
-                        Monitor your business on real-time dashboard
-                    </h1>
-                    <p class="description">
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Elementum nisi aliquet volutpat pellentesque volutpat est.
-                        Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
-                    </p>
-                    <button>Try for free</button>
-                </div>
-                <div class="col-sm-12 col-md-12 col-lg-5 carousel-right">
-                    <img src="./assets/home1.svg" alt="" class="img-home-1">
-                    <img src="./assets/home2.svg" alt="" class="img-home-2">
+    <div class="wrapper">
+        <section class="carousel" id="carousel">
+            <div class="background">
+                <img src="./assets/background.svg" alt="" class="background-1">
+                <img src="./assets/background2.svg" alt="" class="background-2">
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-7 carousel-left wow animate__animated animate__fadeInUp animate__slow">
+                        <h1 class="title">
+                            Monitor your business on real-time dashboard
+                        </h1>
+                        <p class="description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                            Elementum nisi aliquet volutpat pellentesque volutpat est.
+                            Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam.
+                        </p>
+                        <button>Try for free</button>
+                    </div>
+                    <div
+                        class="col-sm-12 col-md-12 col-lg-5 carousel-right wow animate__animated animate__fadeInUp animate__slow">
+                        <img src="./assets/home1.svg" alt="" class="img-home-1">
+                        <img src="./assets/home2.svg" alt="" class="img-home-2">
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </div>
     <section class="features">
         <div class="container">
-            <div class="feature-title text-center">
+            <div class="feature-title text-center wow animate__animated animate__fadeInUp animate__slow">
                 <h2>Main Features</h2>
                 <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
                     volutpat est. Sapien in etiam vitae nibh nunc mattis imperdiet sed nullam. Vitae et, tortor pulvinar
                     risus pulvinar sit amet. Id vel in nam malesuada.</p>
             </div>
-            <div class="row feature-list">
+            <div class="row feature-list wow animate__animated animate__fadeInUp animate__slow">
                 <div class="col-sm-12 col-md-12 col-lg-4 feature-item text-center">
                     <div class="feature-item-img">
                         <img src="./assets/features1.svg" alt="">
@@ -155,7 +161,7 @@
     <section class="services">
         <div class="container">
             <div class="services-list">
-                <div class="service-item d-flex">
+                <div class="service-item d-flex wow animate__animated animate__fadeInUp animate__slow">
                     <div class="service-left">
                         <h2>Automated Reports & Widget Alerts</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
@@ -166,7 +172,8 @@
                         <img src="./assets/service1.svg" alt="">
                     </div>
                 </div>
-                <div class="service-item d-flex" style="gap: 4rem;">
+                <div class="service-item special d-flex wow animate__animated animate__fadeInUp animate__slow"
+                    style="gap: 4rem;">
                     <div class="service-left">
                         <img src="./assets/service2.svg" alt="">
                     </div>
@@ -177,7 +184,7 @@
                             Vitae et, tortor pulvinar risus pulvinar sit amet.</p>
                     </div>
                 </div>
-                <div class="service-item d-flex">
+                <div class="service-item d-flex wow animate__animated animate__fadeInUp animate__slow">
                     <div class="service-left">
                         <h2>Pre-built Dashboard Templates</h2>
                         <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
@@ -191,17 +198,22 @@
             </div>
         </div>
     </section>
-    <section class="plan">
-        <div class="container">
-            <div class="pricing-plan-title text-center">
-                <h2>Pricing Plan</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat pellentesque
-                    volutpat est.</p>
+    <div class="wrapper-2">
+        <section class="plan">
+            <div class="backgrounds">
+                <img src="./assets/background3.svg" alt="">
             </div>
-            <div class="pricing-plan-content">
-                <div class="plan-list row">
-                    <div class="col-sm-12 col-md-12 col-lg-4 plan-item text-center">
-                        <div class="plan-product">
+            <div class="container">
+                <div class="pricing-plan-title text-center wow animate__animated animate__fadeInUp animate__slow">
+                    <h2>Pricing Plan</h2>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Elementum nisi aliquet volutpat
+                        pellentesque
+                        volutpat est.</p>
+                </div>
+                <div class="pricing-plan-content wow animate__animated animate__fadeInUp animate__slow">
+                    <div class="plan-list row">
+
+                        <div class="plan-product text-center">
                             <div class="plan-item-title">
                                 <h3>Starter</h3>
                                 <h5>up to 3 users</h5>
@@ -212,65 +224,65 @@
                             </div>
                             <button class="text-white">Order</button>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4 plan-item text-center">
-                        <div class="plan-product"
+
+
+                        <div class="plan-product plan-product-special text-center"
                             style="background: white; transform: translateY(-1rem); box-shadow: black 0px 20px 30px -10px;">
                             <div class="plan-item-title">
-                                <h3 style="color: var(--primary-color);">Starter</h3>
-                                <h5>up to 3 users</h5>
+                                <h3 style="color: var(--primary-color);">Standard</h3>
+                                <h5>up to 20 users</h5>
                             </div>
                             <div class="plan-item-price">
-                                <h1 style="color: var(--primary-color);">29</h1>
+                                <h1 style="color: var(--primary-color);">99</h1>
                                 <h5>per month</h5>
                             </div>
-                            <button class="text-white" style=" color: white;
-                            background-color: var(--pink);
-                            padding: 0.7rem 3.4rem;
-                            border: none;
-                            font-weight: bold;
-                            cursor: pointer;
-                          ">Order</button>
+                            <button class="text-white special-button" style=" color: white;
+                                background-color: var(--pink);
+                                padding: 0.7rem 3.4rem;
+                                border: none;
+                                font-weight: bold;
+                                cursor: pointer;
+                              ">Order</button>
                         </div>
-                    </div>
-                    <div class="col-sm-12 col-md-12 col-lg-4 plan-item text-center">
-                        <div class="plan-product">
+
+                        <div class="plan-product text-center">
                             <div class="plan-item-title">
-                                <h3>Starter</h3>
-                                <h5>up to 3 users</h5>
+                                <h3>Premium</h3>
+                                <h5>up to 200 users</h5>
                             </div>
                             <div class="plan-item-price">
-                                <h1>29</h1>
+                                <h1>299</h1>
                                 <h5>per month</h5>
                             </div>
                             <button class="text-white">Order</button>
                         </div>
+
                     </div>
                 </div>
+                <footer class="d-flex wow animate__animated animate__fadeInUp animate__slow">
+                    <div class="brand">
+                        <img src="./assets/logo-white.svg" alt="">
+                    </div>
+                    <div class="links">
+                        <ul>
+                            <li>Product</li>
+                            <li>Pricing</li>
+                            <li>FAQ</li>
+                            <li>Blog</li>
+                        </ul>
+                    </div>
+                    <div class="social">
+                        <ul>
+                            <li><img src="./assets/Facebook.svg" alt=""></li>
+                            <li><img src="./assets/Instagram.svg" alt=""></li>
+                            <li><img src="./assets/Twitter.svg" alt=""></li>
+                        </ul>
+                    </div>
+                </footer>
             </div>
-            <hr style="height: 2px; background-color: var(--line);">
-            <footer class="d-flex">
-                <div class="brand">
-                    <img src="./assets/logo-white.svg" alt="">
-                </div>
-                <div class="links">
-                    <ul>
-                        <li>Product</li>
-                        <li>Pricing</li>
-                        <li>FAQ</li>
-                        <li>Blog</li>
-                    </ul>
-                </div>
-                <div class="social">
-                    <ul>
-                        <li><img src="./assets/Facebook.svg" alt=""></li>
-                        <li><img src="./assets/Instagram.svg" alt=""></li>
-                        <li><img src="./assets/Twitter.svg" alt=""></li>
-                    </ul>
-                </div>
-            </footer>
-        </div>
-    </section>
+        </section>
+    </div>
+
     <a href="#" class="scroll-to-top" id="scrollToTop">
         <img src="./assets/scroll-logo.svg" alt="">
     </a>
@@ -286,6 +298,10 @@
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous">
     </script>
     <script src="./javascript/main.js"></script>
+    <script src="./lib/WOW-master/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
 </body>
 
 </html>

@@ -5,7 +5,7 @@ document.getElementById("toggleMenu").onclick = () => {
   menuBar_link.style.transition = `0.5s ease-in-out`;
 };
 
-document.getElementById("toggleMenu").onblur = () => {
+document.getElementById("carousel").onclick = () => {
   let menuBar_link = document.getElementById("menubar-link");
   menuBar_link.style.width = "0";
   menuBar_link.style.transition = `0.5s ease-in-out`;
@@ -22,5 +22,3 @@ window.onscroll = () => {
     ? document.getElementById("scrollToTop").classList.add("scroll-visible")
     : document.getElementById("scrollToTop").classList.remove("scroll-visible");
 };
-// cho man hinh to ra chut, ctrl +
-//roi
